@@ -2,7 +2,7 @@ Iniciar o projeto django
 ´´´
 python - m venv venv
 . venv/bin/activate
-pip install -r comandos/requirements.txt
+pip install -r requirements.txt
 django-admin startproject project .
 python manage.py startapp contact
 ´´´
@@ -17,4 +17,14 @@ git init
 git add .
 git commit -m 'Mensagem'
 git remote add origin URL_DO_GIT
+´´´
+
+Migrando a base de dados do django
+´´´
+python manage.py makemigrations
+python manage.py migrate
+´´´
+Criando um superusuario
+´´´
+python manage.py createsuperuser
 ´´´
