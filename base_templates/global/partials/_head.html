@@ -1,0 +1,11 @@
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if site_title is null %}
+        <title>Agenda</title>
+    {% else %}
+        <title>{{site_title}}</title>
+    {% endif %}
+    <link rel="stylesheet" href="{% static "/global/css/style.css" %}">
+</head>
